@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./script.js">
+</head>
+<body>
+
+    <header class="header">
+        <h1>My Image Gallery</h1>
+        <p>Explore beautiful moments around the world</p>
+    </header>
+
+    <main class="gallery" id="gallery">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+             alt="Beautiful mountain landscape">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+             alt="Mountain lake">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+             alt="Beautiful beach">
+        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800"
+             alt="Sunrise over a green field">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+             alt="Sunlight in a forest">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+             alt="Snow-covered mountains">
+        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800"
+             alt="Ocean waves">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800"
+             alt="Green countryside">
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog"
+         aria-modal="true" aria-label="Image preview" hidden>
+        <button class="close" id="closeBtn" aria-label="Close preview">
+            &times;
+        </button>
+        <button class="prev" id="prevBtn" aria-label="Previous image">
+            &#10094;
+        </button>
+        <img id="previewImage" src="" alt="">
+        <button class="next" id="nextBtn" aria-label="Next image">
+            &#10095;
+        </button>
+        <p id="imageCaption"></p>
+    </div>
+
+    <footer>
+        <p>Created with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
